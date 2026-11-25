@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>VICE LOT 66</title><link rel="stylesheet" href="style.css"></head><body>
+<div id="app">
+  <header class="topbar">
+    <div class="brand"><div class="brand-mark">66</div><div><b>VICE LOT</b><span>AUCTION &amp; UNDERWORLD</span></div></div>
+    <div class="stats"><div><span>BANK</span><strong id="bank">$12,800</strong></div><div><span>HEAT</span><strong id="heat"><i></i><i></i><i></i><i class="off"></i><i class="off"></i></strong></div><div><span>DAY</span><strong id="day">1 / 6</strong></div></div>
+  </header>
+  <main>
+    <aside class="players left"><div class="eyebrow">THE ROOM</div><div id="opponents"></div></aside>
+    <section class="table">
+      <div class="auction-card">
+        <div class="card-head"><span id="rarity">RARE</span><span id="lotNo">LOT #104</span></div>
+        <div class="art" id="art"><div class="sun"></div><div class="palms">⌇</div><div class="car">◣━━◢</div><div class="plate" id="plate">NIGHT<br>RUNNER</div></div>
+        <div class="card-info"><div><span id="type">VEHICLE / STREET</span><h1 id="itemName">Night Runner</h1></div><div class="power"><span>POWER</span><b id="power">78</b></div></div>
+        <div class="traits" id="traits"><span>⚡ SPEED</span><span>◈ STEALTH</span></div>
+      </div>
+      <div class="bid-panel">
+        <div class="bid-row"><span>CURRENT BID</span><strong id="bid">$4,200</strong></div>
+        <div class="bidder" id="bidder">Mara is bidding</div>
+        <div class="bid-buttons"><button id="bidBtn" class="bid"><span>PLACE BID</span><b id="bidAmount">+$600</b></button><button id="passBtn" class="pass">PASS</button></div>
+      </div>
+      <div class="timer"><div id="timerBar"></div></div>
+    </section>
+    <aside class="players right">
+      <div class="eyebrow">YOUR CREW</div><div class="crew-title"><span>GARAGE VALUE</span><b id="garage">$0</b></div><div id="garageList" class="garage-list"><div class="empty">No properties won yet</div></div>
+      <div class="boosts"><div><span>RIVAL SECTOR</span><b id="sector">Little Havana</b></div><div><span>REPUTATION</span><b id="rep">Neutral</b></div></div>
+    </aside>
+  </main>
+  <footer><div class="log" id="log">Auction opens. Keep your nerve — and your cash.</div><button id="infoBtn">HOW TO PLAY</button></footer>
+</div>
+<div id="modal" class="modal hidden"><div class="modal-box"><button class="close" id="closeModal">×</button><div class="modal-mark">66</div><h2>Bid smart. Walk away rich.</h2><p>Outbid rival crews to build garage value. Every bid raises the cost; passing saves your cash but lets rivals take the lot.</p><p><b>Heat</b> rises with aggressive bids. At 5 heat, the auction gets raided.</p><p>Highest garage value after 6 lots wins — unless the raid takes you out.</p><button id="gotIt">ENTER THE AUCTION</button></div></div>
+<script src="game.js"></script></body></html>
